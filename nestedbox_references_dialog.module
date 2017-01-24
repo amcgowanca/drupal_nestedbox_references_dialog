@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * nestedbox_references_dialog.module
+ */
+
+/**
+ * Implements hook_references_dialog_entity_admin_paths().
+ */
+function nestedbox_references_dialog_references_dialog_entity_admin_paths() {
+  return array(
+    'nestedbox' => array(
+      'add' => 'admin/content/nestedbox/add/[bundle]',
+      'edit' => 'admin/content/nestedbox/[entity_id]/edit',
+    ),
+  );
+}
